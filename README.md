@@ -28,7 +28,7 @@ Time Series Analysis involves statistical techniques to model and analyze time-o
 14. **Auto ARIMA:** Introduces automated processes to identify the most suitable ARIMA model parameters.
 
 ### LSTM Based Time Series Analysis (Draft)
-- **LSTM Based Time Series Analysis:** Upcoming notebook will introduce Long Short-Term Memory (LSTM) networks, and how it is capable of learning order dependence in sequence prediction problems.
+- **LSTM Based Time Series Analysis:** This notebook will introduce Long Short-Term Memory (LSTM) networks, and how it is capable of learning order dependence in sequence prediction problems.
 
 ### Meta Prophet Package (Draft)
 - **Using Prophet Package for Time Series Analysis:** Prophet is the one of the tools that have emerged as particularly effective and user-friendly for time series analysis purpose. Prophet is an open-source library developed by Meta's Core Data Science team and is designed to handle the kinds of datasets which often have strong seasonal patterns and are subject to missing data and outliers.
