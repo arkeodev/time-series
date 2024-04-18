@@ -30,12 +30,10 @@ Time Series Analysis involves statistical techniques to model and analyze time-o
 ### Meta Prophet Package
 - **Using Prophet Package for Time Series Analysis:** Prophet is the one of the tools that have emerged as particularly effective and user-friendly for time series analysis purpose. Prophet is an open-source library developed by Meta's Core Data Science team and is designed to handle the kinds of datasets which often have strong seasonal patterns and are subject to missing data and outliers.
 
-### LSTM Based Time Series Analysis (Draft)
-- **LSTM Based Time Series Analysis:** This notebook will introduce Long Short-Term Memory (LSTM) networks, and how it is capable of learning order dependence in sequence prediction problems.
+### CNN-LSTM Based Time Series Analysis
+- **CNN-LSTM Based Time Series Analysis:** This notebook explores the integration of Convolutional Neural Networks (CNNs) and Long Short-Term Memory (LSTM) networks for advanced time series forecasting. CNNs excel at extracting layered spatial features from sequential data, while LSTMs are adept at capturing long-term dependencies essential for sequence prediction. This hybrid approach leverages the strengths of both architectures, enhancing the model's ability to learn complex patterns and dependencies in time series data, thus providing more accurate and robust forecasting results.
 
 ## Next on My List
-
-
 - **Transformer Based Time Series Analysis:** Future content will explore the application of Transformer models, renowned for their effectiveness in handling sequential data, to the domain of time series analysis.
 
 
