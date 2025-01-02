@@ -2,72 +2,106 @@
 
 ## Introduction
 
-This repository focuses on Time Series Analysis, an essential aspect of data science that deals with sequential data points collected over time. My goal is to share insights and methodologies for analyzing time-dependent data, which is pivotal for forecasting, pattern recognition, and decision-making processes in various fields such as finance, meteorology, and more. Here, I start with basic time series analysis concepts and progressively cover advanced topics and models.
+This repository provides a comprehensive collection of time series analysis techniques, from traditional statistical methods to modern deep learning approaches. It serves as both a learning resource and a practical toolkit for working with time-dependent data.
 
-## What is Time Series Analysis?
+## Repository Structure
 
-Time Series Analysis involves statistical techniques to model and analyze time-ordered data points. By identifying the nature and patterns within time series data, one can forecast future points in the series. This repository will walk you through various models and their applications, ensuring a comprehensive understanding of this intricate field.
+The repository is organized into three main sections:
 
-## Repository Contents
+### 1. Statistical Time Series Analysis
 
-### Statistical Time Series Analysis
+A comprehensive collection of notebooks covering fundamental to advanced statistical methods:
 
-1. **Introduction to Time Series:** An introductory notebook that sets the foundation for time series analysis, discussing its importance and applications.
-2. **Auto-Correlation and Partial Auto-Correlation:** A notebook that explores the concepts of autocorrelation and partial autocorrelation in time series.
-3. **Time Series Concepts:** This notebook covers key concepts and components of time series data, such as random walk, and noise.
-4. **Stationary Data:** Discusses the significance of data stationarity in time series analysis and methods to achieve it.
-5. **Pickup the Correct Model:** A guide to selecting appropriate time series models based on data characteristics and analysis objectives.
-6. **Auto-Regressive Models:** Introduces and implements Auto-Regressive (AR) models, a fundamental class of time series forecasting.
-7. **Moving Average Models:** Delves into Moving Average (MA) models and their role in time series analysis.
-8. **ARMA Models:** Explores the combination of AR and MA models to form ARMA models for analyzing time series.
-9. **ARIMA Models:** Discusses ARIMA models, which extend ARMA models to include integrated components for handling non-stationary data.
-10. **ARIMAX Models:** Introduces ARIMAX, an extension of ARIMA that incorporates exogenous variables.
-11. **SARIMAX Models:** A notebook on Seasonal ARIMA with eXogenous variables model for handling seasonality in time series.
-12. **ARCH Model:** Covers Autoregressive Conditional Heteroskedasticity (ARCH) models used for modeling volatility.
-13. **GARCH Model:** Discusses Generalized ARCH models, an extension of ARCH for more flexible volatility modeling.
-14. **Auto ARIMA:** Introduces automated processes to identify the most suitable ARIMA model parameters.
+- Basic Concepts (Introduction, Autocorrelation, Covariance)
+- Data Preparation (Stationarity, Normalization)
+- Model Selection (AIC vs BIC)
+- Classical Models:
+  - Autoregressive (AR)
+  - Moving Average (MA)
+  - ARMA, ARIMA, ARIMAX
+  - SARIMAX
+  - ARCH/GARCH
+  - Auto-ARIMA
 
-### Meta Prophet Package
-- **Using Prophet Package for Time Series Analysis:** Prophet is the one of the tools that have emerged as particularly effective and user-friendly for time series analysis purpose. Prophet is an open-source library developed by Meta's Core Data Science team and is designed to handle the kinds of datasets which often have strong seasonal patterns and are subject to missing data and outliers.
+### 2. Meta Prophet Analysis
 
-### CNN-LSTM Based Time Series Analysis
-- **CNN-LSTM Based Time Series Analysis:** This notebook explores the integration of Convolutional Neural Networks (CNNs) and Long Short-Term Memory (LSTM) networks for advanced time series forecasting. CNNs excel at extracting layered spatial features from sequential data, while LSTMs are adept at capturing long-term dependencies essential for sequence prediction. This hybrid approach leverages the strengths of both architectures, enhancing the model's ability to learn complex patterns and dependencies in time series data, thus providing more accurate and robust forecasting results.
+Implementation of Meta's Prophet package for time series forecasting, particularly effective for:
 
-## Next on My List
-- **Transformer Based Time Series Analysis:** Future content will explore the application of Transformer models, renowned for their effectiveness in handling sequential data, to the domain of time series analysis.
+- Data with strong seasonal patterns
+- Missing data handling
+- Outlier management
+- Multiple seasonality patterns
 
+### 3. Deep Learning Approaches
+
+Advanced neural network architectures for time series:
+
+- CNN-LSTM hybrid models
+- Deep learning specific considerations for time series
+- Neural network architecture selection
+
+## Requirements
+
+To run the notebooks in this repository, you'll need:
+
+```python
+numpy
+pandas
+statsmodels
+sklearn
+prophet
+tensorflow
+keras
+matplotlib
+seaborn
+jupyter
+```
 
 ## Getting Started
 
-To begin exploring these notebooks:
+1. Clone the repository:
 
-1. Clone this repository to your local environment.
-2. Ensure that Jupyter Notebook or JupyterLab is installed on your machine. You can also use Google Colab for an online, no-setup experience.
-3. Navigate to the repository's directory and open the Jupyter Notebooks to start your journey into Time Series Analysis.
+```bash
+git clone https://github.com/yourusername/time-series.git
+cd time-series
+```
 
-## Tools and Techniques for Time Series Analysis
+2.Install dependencies:
 
-In this repository, we cover a variety of time series analysis topics, including:
+```bash
+pip install -r requirements.txt
+```
 
-- Understanding the structure and components of time series data.
-- The use of statistical models for trend and seasonality detection.
-- Advanced modeling techniques like ARIMA, SARIMAX, ARCH, and GARCH models.
-- The implementation of models in Python for forecasting and analysis.
+3.Launch Jupyter:
 
-## Conclusion
+```bash
+jupyter notebook
+```
 
-Our Time Series Analysis Repository is a comprehensive resource for anyone interested in understanding and applying time series analysis techniques. With detailed notebooks and practical examples, we aim to provide a useful guide for both novices and experienced practitioners in the field.
+4.Start with `Statistical_Time_Series_Analysis/01-introduction-to-time-series.ipynb` for a structured learning path.
 
-## References and Further Reading
+## Learning Path
 
-- [Forecasting: Principles and Practice](https://otexts.com/fpp3/)
-- [Time Series Analysis and Its Applications: With R Examples](https://www.stat.pitt.edu/stoffer/tsa4/)
-- [Applied Econometric Time Series](https://www.wiley.com/en-us/Applied+Econometric+Time+Series%2C+4th+Edition-p-9781118808566)
+For optimal learning, follow this recommended sequence:
 
-## Contributing
+1. Start with Statistical Analysis (01-introduction through 18-auto-ARIMA)
+2. Explore Prophet for automated forecasting
+3. Advance to deep learning approaches
 
-We welcome contributions to this repository! If you would like to contribute, please follow the guidelines outlined in the CONTRIBUTING.md file.
+## Future Developments
+
+- Transformer-based architectures for time series
+- Probabilistic forecasting methods
+- Advanced deep learning architectures (Temporal Fusion Transformers, N-BEATS)
+- Real-world case studies and applications
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+## References
+
+- [Forecasting: Principles and Practice](https://otexts.com/fpp3/)
+- [Time Series Analysis and Its Applications](https://www.stat.pitt.edu/stoffer/tsa4/)
+- [Prophet Documentation](https://facebook.github.io/prophet/)
+- [Deep Learning for Time Series Forecasting](https://www.tensorflow.org/tutorials/structured_data/time_series)
