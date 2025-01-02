@@ -40,23 +40,6 @@ Advanced neural network architectures for time series:
 - Deep learning specific considerations for time series
 - Neural network architecture selection
 
-## Requirements
-
-To run the notebooks in this repository, you'll need:
-
-```python
-numpy
-pandas
-statsmodels
-sklearn
-prophet
-tensorflow
-keras
-matplotlib
-seaborn
-jupyter
-```
-
 ## Getting Started
 
 1. Clone the repository:
